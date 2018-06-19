@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Encuesta 2</title>
+  </head>
+  <body>
+    <h1><center>Encuesta 2</center></h1>
+    <form action="{{ url_for('resultado2', nombre=nombre, edad=edad, sum=sum, id=id)}}" method="POST">
+      <label>Nombre</label>
+      <input type="text" name="nombre" value="" style="width:70%">
+      <label>Edad    </label>
+      <input type="text" name="edad" value=""><br><br><br>
+
+      <label><b>Responde las siguientes preguntas (solo una respuesta)</b></label><br><br><br>
+
+      <label>1.	Tu salón fomenta el compañerismo...</label><br><br>
+      <input type="checkbox" name="check" value="1">Haciendo trabajos en grupo<br>
+      <input type="checkbox" name="check" value="1">Dinamicas al inicio de clase<br>
+      <input type="checkbox" name="check" value="1">Charlas motivacionales al inicio de clase<br>
+      <input type="checkbox" name="check" value="0">N/A<br><br>
+
+      <label>2.	Cuando haces actividades que te gustan prefieres hacerlas...</label><br><br>
+      <input type="checkbox" name="check" value="1">Mientras más personas mejor<br>
+      <input type="checkbox" name="check" value="0">A solas<br>
+      <input type="checkbox" name="check" value="1">Con amigos más cercanos<br>
+      <input type="checkbox" name="check" value="1">Desconocidos<br><br>
+
+      <label>3.	¿Cuál de las siguientes palabras te describe/describen?</label><br><br>
+      <input type="checkbox" name="check" value="0">Proactivo/a<br>
+      <input type="checkbox" name="check" value="0">Alegre<br>
+      <input type="checkbox" name="check" value="0">Carsimatico<br>
+      <input type="checkbox" name="check" value="0">Inteligente<br><br>
+
+      <label>4. Que haces mayormente en los recreos </label><br><br>
+      <input type="checkbox" name="check" value="1">Hacer deporte<br>
+      <input type="checkbox" name="check" value="0">Comer<br>
+      <input type="checkbox" name="check" value="1">Hablar<br>
+      <input type="checkbox" name="check" value="1">Jugar otros juegos<br>
+      <input type="checkbox" name="check" value="0">Estudiar<br><br>
+
+      <label>5. Te gusta participar en clases </label><br><br>
+      <input type="checkbox" name="check" value="1">Si me gusta<br>
+      <input type="checkbox" name="check" value="0">No mucho<br>
+      <input type="checkbox" name="check" value="0">No puedo<br>
+
+      <label>6. Que es lo que más te gusta del colegio </label><br><br>
+      <input type="checkbox" name="check" value="1">Conocer a mis compañeros<br>
+      <input type="checkbox" name="check" value="0">Aprender<br>
+      <input type="checkbox" name="check" value="1">Jugar con mis amigos<br>
+      <input type="checkbox" name="check" value="0">Ninguno de los anteriores<br><br>
+
+      <label>7. Te Gusta Ir al colegio </label><br><br>
+      <input type="checkbox" name="check" value="1">Si, Me gusta mucho<br>
+      <input type="checkbox" name="check" value="1">Si<br>
+      <input type="checkbox" name="check" value="0.5">Masomenos<br>
+      <input type="checkbox" name="check" value="0">No<br>
+      <input type="checkbox" name="check" value="-1">No, lo detesto<br><br>
+
+      <label>8. Me gusta hablar en público.</label><br><br>
+      <input type="checkbox" name="check" value="1">Si, Me gusta mucho<br>
+      <input type="checkbox" name="check" value="1">Si<br>
+      <input type="checkbox" name="check" value="0.5">Masomenos<br>
+      <input type="checkbox" name="check" value="0">No<br>
+      <input type="checkbox" name="check" value="0">No, lo detesto<br><br>
+
+      <label>9. A la hora de tomar decisiones…</label><br><br>
+      <input type="checkbox" name="check" value="1">Me siento seguro de mí mismo.<br>
+      <input type="checkbox" name="check" value="0">Necesito que sean aprobadas por gente que considero mejor que yo.<br>
+      <input type="checkbox" name="check" value="0">Aunque decido yo, suelo darle demasiadas vueltas.<br><br>
+
+      <label>10. Piensas que si alguien se defiende usando la violencia, a su grupo de amigos le parecerá bien?</label><br><br>
+      <input type="checkbox" name="check" value="1">No<br>
+      <input type="checkbox" name="check" value="0">A veces<br>
+      <input type="checkbox" name="check" value="-1">Con Frecuencia<br><br>
+
+      <label>11. ¿Consideras que está bien que alguien use la violencia para defender sus ideas?</label><br><br>
+      <input type="checkbox" name="check" value="1">No<br>
+      <input type="checkbox" name="check" value="0">A veces<br>
+      <input type="checkbox" name="check" value="-1">Con Frecuencia<br><br>
+
+      <label>12. Me gusta conocer y hablar con gente que no conozco.</label><br><br>
+      <input type="checkbox" name="check" value="1">Muy propio de mí<br>
+      <input type="checkbox" name="check" value="1">Frecuente en mí <br>
+      <input type="checkbox" name="check" value="0.5">A veces <br>
+      <input type="checkbox" name="check" value="0">Poco frecuente<br>
+      <input type="checkbox" name="check" value="0">Muy impropio de mí<br><br>
+
+      <label>13. 	Cuando realizas un trabajo prefieres hacerlo solo</label><br><br>
+      <input type="checkbox" name="check" value="1">Muy propio de mí<br>
+      <input type="checkbox" name="check" value="1">Frecuente en mí <br>
+      <input type="checkbox" name="check" value="0.5">A veces <br>
+      <input type="checkbox" name="check" value="0">Poco frecuente<br>
+      <input type="checkbox" name="check" value="0">Muy impropio de mí<br><br>
+
+      <button type="submit" name="button">Enviar</button>
+    </form>
+  </body>
+</html>

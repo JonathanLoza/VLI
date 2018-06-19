@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>ToYouth</title>
+  </head>
+  <body style="margin: 20px">
+    <h1>Bienvenido {{user.fullname}}</h1>
+    <br><br>
+    <h2>Encuesta:</h2>
+    <br><br>
+    <p>Entregar este link a sus alumnos para que puedan realizar la encuesta</p>
+    <br><br>
+    <li><a href="{{ url_for('enc1', id=user.id) }}"> Encuesta 1</a></li>
+    <br><br>
+    <p>Resultados: </p>
+    <br><br>
+      <li><a href="{{ url_for('datos', id=user.id) }}"> Data</a></li>
+    <br>
+  </body>
+</html>

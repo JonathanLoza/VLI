@@ -1,0 +1,24 @@
+<html>
+<head>
+	<title> Login </title>
+	<meta name ="viewport" content="width-device-width" charset="utf-8">
+	<link rel ="stylesheet" href = "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel= "stylesheet" href= "{{ url_for('static',filename='styles/Login.css') }}">
+</head>
+
+<body class="text-center">
+	<div>
+		<img src="https://losojosdehipatia.com.es/wp-content/uploads/3.png" class="img-rounded"width="450" height="450">
+		<form class="form-signin" action="/dologin" method="POST">
+		  <label for="inputEmail" class="sr-only">Correo</label>
+		  <input type="text" id="inputEmail" name="email" class="form-control" placeholder="Correo" required autofocus>
+		  <label for="inputPassword" class="sr-only">Contraseña</label>
+		  <input type="password" id="inputPassword" name="password" class="form-control" placeholder="Contraseña" required>
+		  <button class="btn btn-lg btn-primary btn-block" type="submit">OK</button>
+		  <p class="mt-5 mb-3 text-muted">&copy; UTEC</p>
+		</form>
+	</div>
+	<div>
+	<h1 class="display-3">ToYouth</h1>
+	</div>
+  </body>

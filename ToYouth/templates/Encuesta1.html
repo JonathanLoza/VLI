@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Encuesta 1</title>
+  </head>
+  <body>
+    <h1><center>Encuesta 1</center></h1>
+    <form action="{{ url_for('resultado1', id=user.id) }}", method="POST">
+      <label>Nombre</label>
+      <input type="text" name="nombre" value="" style="width:70%">
+      <label>Edad    </label>
+      <input type="text" name="edad" value=""><br><br><br>
+
+      <label><b>Responde las siguientes preguntas (solo una respuesta)</b></label><br><br><br>
+
+      <label>1. Cuando tengo que enfrentar situaciones nuevas</label><br><br>
+      <input type="checkbox" name="check"  value="1">Puedo enfrentarlas<br>
+      <input type="checkbox" name="check"  value="0">Me siento inadecuado<br><br>
+
+      <label>2. Cuando un amigo , familiar o alguien en el trabajo me critica</label><br><br>
+      <input type="checkbox" name="check"  value="1">Lo tomo como un comentario<br>
+      <input type="checkbox" name="check"  value="0">Reacciono negativamente<br><br>
+
+      <label>3. Cuando pienso en mis defectos.</label><br><br>
+      <input type="checkbox" name="check"  value="1">Me acepto a mis mismo incondicionalmente<br>
+      <input type="checkbox" name="check"  value="0">Quiero esconderme y que nadie se entere<br><br>
+
+      <label>4. Cuando estoy frente a personas que considero más importantes que yo.</label><br><br>
+      <input type="checkbox" name="check"  value="1">No exagero ni pretendo ser alguien que no soy<br>
+      <input type="checkbox" name="check"  value="0">Exagero y pretendo ser alguien que no soy<br><br>
+
+      <label>5. Cuando alguien me pregunta lo que siento</label><br><br>
+      <input type="checkbox" name="check"  value="1">No tengo miedo de expresar lo que siento<br>
+      <input type="checkbox" name="check"  value="0">Miento<br><br>
+
+      <label>6. Cuando pierdo (competencia,oportunidad,etc)</label><br><br>
+      <input type="checkbox" name="check"  value="1">No siento resentimiento<br>
+      <input type="checkbox" name="check"  value="0">Me siento resentido<br><br>
+
+      <label>7. Cuando estoy frente a un grupo de personas conocidas o desconocias</label><br><br>
+      <input type="checkbox" name="check"  value="1">No me preocupo acerca de lo que los demás piensan de mi<br>
+      <input type="checkbox" name="check"  value="0">Me preocupa mucho<br><br>
+
+      <label>8. Cuando algo malo me sucede</label><br><br>
+      <input type="checkbox" name="check"  value="1">No me siento víctima de las personas o circunstancias<br>
+      <input type="checkbox" name="check"  value="0">Me siento una victima<br><br>
+
+      <label>9. Cuando me miro en el espejo.</label><br><br>
+      <input type="checkbox" name="check"  value="1">Acepto a mi cuerpo como es<br>
+      <input type="checkbox" name="check"  value="0">No acepto mi cuerpo<br><br>
+
+      <label>10. Cuando tomo una decisión .</label><br><br>
+      <input type="checkbox" name="check"  value="1">No necesito la aprobación de los demás para sentirme bien<br>
+      <input type="checkbox" name="check"  value="0">Necesito la aprobación de los demás para sentirme bien<br><br>
+
+      <label>11. Cuando alguien me está insultando o tratando mal.</label><br><br>
+      <input type="checkbox" name="check"  value="1">Yo puedo defenderme a mi mismo sin agresividad<br>
+      <input type="checkbox" name="check"  value="0">Le respondo con agresividad<br><br>
+
+      <label>12. Cuando necesito algo .</label><br><br>
+      <input type="checkbox" name="check"  value="1">Yo soy asertivo en mi comunicación con los demás y puedo pedir lo que quiero y necesito<br>
+      <input type="checkbox" name="check"  value="0">Nunca pido lo que quiero o necesito<br><br>
+
+      <label>13. Cuando alguien me pide que haga algo que no quiero hacer.</label><br><br>
+      <input type="checkbox" name="check"  value="1">No me siento culpable cuando digo NO<br>
+      <input type="checkbox" name="check"  value="0">Siento mucha culpa si digo NO<br><br>
+
+      <label>14.Cuando me relaciono con las demás personas.</label><br><br>
+      <input type="checkbox" name="check"  value="1">No me siento culpable cuando digo NOMe relaciono bien con las demás personas y no tiengo miedo al abandono ni la soledad<br>
+      <input type="checkbox" name="check"  value="0">Tengo problemas para relacionarme y siento miedo al abandono y sentirme solo<br><br>
+
+      <label>15. Cuando un amigo, colega o familiar tiene éxito.</label><br><br>
+      <input type="checkbox" name="check"  value="1">No siento envidia por el éxito de los demás<br>
+      <input type="checkbox" name="check"  value="0">Siento mucha envidia<br><br>
+
+      <button type="submit" name="button">Enviar</button>
+    </form>
+  </body>
+</html>
